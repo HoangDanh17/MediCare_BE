@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="DotNetCore.CAP" Version="10.0.2" />
+    <PackageReference Include="DotNetCore.CAP.Dashboard" Version="10.0.2" />
+    <PackageReference Include="DotNetCore.CAP.PostgreSql" Version="10.0.2" />
+    <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="10.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.23.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+    <PackageReference Include="StackExchange.Redis" Version="3.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediCare.Application\MediCare.Application.csproj" />
+    <ProjectReference Include="..\MediCare.Contract\MediCare.Contract.csproj" />
+    <ProjectReference Include="..\MediCare.Domain\MediCare.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

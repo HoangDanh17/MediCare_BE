@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="MediCare.Api/MediCare.Api.csproj" />
+  <Project Path="MediCare.Application/MediCare.Application.csproj" />
+  <Project Path="MediCare.Contract/MediCare.Contract.csproj" />
+  <Project Path="MediCare.Domain/MediCare.Domain.csproj" />
+  <Project Path="MediCare.Persistence/MediCare.Persistence.csproj" />
+</Solution>
