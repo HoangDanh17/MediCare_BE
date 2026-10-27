@@ -1,16 +1,16 @@
 services:
   postgres:
-    image: postgres:18-alpine
+    image: docker.io/library/postgres:18-alpine
     container_name: medicare-postgres
     environment:
       POSTGRES_DB: MediCare
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports: ["5432:5432"]
-    volumes: [pgdata:/var/lib/postgresql] 
+    volumes: [pgdata:/var/lib/postgresql]
 
   rabbitmq:
-    image: rabbitmq:4-management-alpine
+    image: docker.io/library/rabbitmq:4-management-alpine
     container_name: medicare-rabbitmq
     environment:
       RABBITMQ_DEFAULT_USER: guest
@@ -21,7 +21,7 @@ services:
     volumes: [rabbitmqdata:/var/lib/rabbitmq]
 
   redis:
-    image: redis:8-alpine
+    image: docker.io/library/redis:8-alpine
     container_name: medicare-redis
     command: ["redis-server", "--appendonly", "yes"]
     ports: ["6379:6379"]

@@ -1,0 +1,21 @@
+# build output
+**/bin/
+**/obj/
+**/out/
+
+# VCS / IDE
+.git/
+.gitignore
+.idea/
+.vs/
+.vscode/
+
+# local config & artifacts
+**/appsettings.Local.json
+**/*.user
+**/*.suo
+**/*.http
+Dockerfile
+.dockerignore
+docker-compose*.yml
+*.md

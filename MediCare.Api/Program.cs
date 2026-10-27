@@ -85,6 +85,9 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    // Mở http://localhost:5000/ tự chuyển sang Swagger UI
+    app.MapGet("/", () => Results.Redirect("/swagger/index.html")).ExcludeFromDescription();
 }
 
 app.UseHttpsRedirection();
